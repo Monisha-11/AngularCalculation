@@ -1,0 +1,14 @@
+<div [ngStyle]="{'background-color': 'pink','text-align':'center','padding-top':'15px','padding-bottom':'15px','margin-bottom':'15px','height':'250px'}">
+    <h2>AREA OF RECTANGLE</h2>
+    <div [ngStyle]="{'padding-bottom':'10px'}">
+    Length=<input type="text" [(ngModel)]="length"  [ngStyle]="{'margin-bottom':'5px','margin-right':'5px'}">Meters<br/>
+    </div>
+    <div  [ngStyle]="{'padding-bottom':'10px'}">
+    Breadth=<input type="text" [(ngModel)]="breadth"  [ngStyle]="{'margin-bottom':'5px','margin-right':'5px'}">Meters<br/>
+    </div>
+
+    <input type="button" [ngStyle]="{'margin-bottom':'5px'}" value="Calculate Area" (click)="onCalculate()"><br/>
+    <div  [ngStyle]="{'padding-top':'5px','padding-right':'60px'}">
+    Area of Rectangle=<input type="text" [value]="area" [ngStyle]="{'margin-top':'5px','margin-left':'5px','margin-right':'5px'}">Meters<sup>2</sup>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<div [ngStyle]="{'background-color': ' pink','text-align':'center','padding-top':'15px','padding-bottom':'20px','height':'250px'}">
+    <h2>VOLUME OF CYLINDER</h2>
+    <div [ngStyle]="{'padding-bottom':'10px'}" >
+        Radius=
+        <input type="text" [(ngModel)]="radius" [ngStyle]="{'margin-bottom':'5px','margin-right':'5px'}">Meters<br/>
+    </div>
+    <div [ngStyle]="{'padding-bottom':'10px'}">
+        Height=
+    <input type="text" [(ngModel)]="height" [ngStyle]="{'margin-bottom':'5px','margin-right':'5px'}">Meters<br/>
+    </div>
+
+    <input type="button" [ngStyle]="{'margin-bottom':'5px'}" value="Calculate Volume" (click)="onCalculateVol()"><br/>
+    <div [ngStyle]="{'padding-top':'5px','padding-right':'90px'}" >
+
+        Volume of Cylinder=<input type="text" [value]="volume" [ngStyle]="{'margin-top':'5px','margin-left':'5px','margin-right':'5px'}">Meters<sup>3</sup>
+    </div>
+
+</div>
